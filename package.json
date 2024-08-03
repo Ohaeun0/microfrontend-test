@@ -3,8 +3,8 @@
   "private": true,
   "scripts": {
     "build": "turbo build",
-    "host" :"turbo dev --filter=host-next",
-    "remote" :"turbo dev --filter=remote-next",
+    "host": "turbo dev --filter=host-next",
+    "remote": "turbo dev --filter=remote-next",
     "dev": "NEXT_PRIVATE_LOCAL_WEBPACK=true turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
@@ -14,6 +14,13 @@
     "turbo": "^2.0.11",
     "typescript": "^5.4.5"
   },
+  "dependencies": {
+    "ui": "*"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
   "packageManager": "pnpm@8.15.6",
   "engines": {
     "node": ">=18"
