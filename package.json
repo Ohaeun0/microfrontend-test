@@ -5,7 +5,7 @@
     "build": "turbo build",
     "host" :"turbo dev --filter=host-next",
     "remote" :"turbo dev --filter=remote-next",
-    "dev": "turbo dev",
+    "dev": "NEXT_PRIVATE_LOCAL_WEBPACK=true turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
