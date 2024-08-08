@@ -15,7 +15,8 @@
     "react-dom": "^18",
     "webpack": "^5.93.0",
     "webpack-cli": "^5.1.4",
-    "@repo/ui": "workspace:*"
+    "@repo/ui": "workspace:*",
+    "@repo/jotai": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^20",
