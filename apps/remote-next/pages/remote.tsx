@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useAtomTest } from "@repo/hook"
-
+import { TestingComponent } from "@repo/testing"
 const RemotePage = () => {
   const {
     atomTest,
@@ -19,6 +19,8 @@ const RemotePage = () => {
 
     <div>{atomTest}</div>
     <button onClick={()=>{setAtomTest((prev:number)=>prev+1)}}>click</button>
+
+    <TestingComponent/>
   </div>
 );}
 

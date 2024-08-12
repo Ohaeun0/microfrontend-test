@@ -17,7 +17,8 @@
     "webpack-cli": "^5.1.4",
     "@repo/ui": "workspace:*",
     "@repo/jotai": "workspace:*",
-    "@repo/hook": "workspace:*"
+    "@repo/hook": "workspace:*",
+    "@repo/testing": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^20",
