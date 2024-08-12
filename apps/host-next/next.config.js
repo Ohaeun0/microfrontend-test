@@ -13,7 +13,7 @@ const remotes = (isServer) => {
 
 module.exports = {
   reactStrictMode: true,
-  transpilePackages: ["@repo/ui","@repo/jotai"],
+  transpilePackages: ["@repo/ui","@repo/jotai", "@repo/hook"],
   webpack(config, options) {
     config.plugins.push(
       new NextFederationPlugin({

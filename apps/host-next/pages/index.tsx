@@ -15,6 +15,7 @@ const RemoteNextComponent = dynamic(() => import("remote_next/component"), {
 });
 
 export default function HostApplication() {
+
   return (
     <HostPage
       hostType="NextJS"
@@ -27,6 +28,7 @@ export default function HostApplication() {
       <Suspense>
         <RemoteNextPage withHostApp />
       </Suspense>
+
     </HostPage>
   );
 }
