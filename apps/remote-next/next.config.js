@@ -2,7 +2,7 @@ const NextFederationPlugin = require("@module-federation/nextjs-mf");
 
 module.exports = {
   reactStrictMode: true,
-  transpilePackages: ["ui"],
+  transpilePackages: ["@repo/ui","@repo/jotai"],
   webpack(config) {
     config.plugins.push(
       new NextFederationPlugin({

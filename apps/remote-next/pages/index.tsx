@@ -1,4 +1,4 @@
-import { RemotePage } from "../../../packages/ui/components";
+import { RemotePage } from "@repo/ui";
 
 interface IProps {
   withHostApp?: boolean;
