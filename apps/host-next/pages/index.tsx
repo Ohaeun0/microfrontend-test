@@ -14,6 +14,12 @@ const RemoteNextComponent = dynamic(() => import("remote_next/component"), {
   ssr: false,
 });
 
+const RemoteTestApp = dynamic(() => import("test_app/page"), {
+  suspense: true,
+  ssr: false,
+});
+
+
 export default function HostApplication() {
 
   return (
@@ -28,6 +34,9 @@ export default function HostApplication() {
       <Suspense>
         <RemoteNextPage withHostApp />
       </Suspense>
+      <Suspense>
+          <RemoteTestApp />
+       </Suspense>
 
     </HostPage>
   );

@@ -15,8 +15,9 @@
     "typescript": "^5.4.5"
   },
   "dependencies": {
+    "jotai": "*",
     "ui": "*",
-    "jotai":"*"
+    "webpack": "^5.93.0"
   },
   "workspaces": [
     "packages/*",
