@@ -1,4 +1,4 @@
-import {Table} from "@repo/ui"
+import {Form, Table} from "@repo/ui"
 
 export default function Home() {
   return (
@@ -6,6 +6,7 @@ export default function Home() {
       className={`flex min-h-screen flex-col items-center justify-between p-24`}
     >
       <Table/>
+      <Form/>
     </main>
   );
 }
